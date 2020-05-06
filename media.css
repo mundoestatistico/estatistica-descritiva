@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Configurar div*/
+div#tv-radio {
+	width: 900px; /*largura*/
+	height: 580px;
+	margin: auto; /*centralizar a imagem*/
+	background: url(../_imagem/radio-tv.png) no-repeat; /*uma imagem de fundo*/
+
+}
+/*posicionando audio no radio*/
+audio#musica {
+	display: block;
+	position: relative;
+	left: 575px;
+	top: 500px;
+	width: 300px;
+}
+
+/*posicionando o video na tv*/
+video#filme {
+	display: block;
+	position: relative;
+	left: 90px;
+	top: 85px;
+	width: 440px;
+}

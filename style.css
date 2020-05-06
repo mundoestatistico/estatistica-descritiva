@@ -1,0 +1,307 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lato|Titillium+Web&display=swap');
+@font-face{
+	font-family: "fonteLogo";
+	src: url("../_fontes/");
+}
+
+/* formatação da cor da pagina*/
+body{
+	font-family: Arial, sans-serif;
+	background-color: #b8cad4;
+	color: rgba(0,0,0,1)
+}
+
+/* Config dos paragrafos*/
+p{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+a {
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+
+}
+/* Config. da interface, 'corpo da pagina'*/
+div#interface {
+
+	width: 1000px;
+	background-color: #ffffff;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /*cria o efeito sombreamento nas bordas*/
+	padding: 10px; /*bordas internas da interface*/
+}
+
+}
+/*Config da tabela*/
+table# tabelaspec td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+}
+
+/*
+aside#cabecalho {
+	display: block;
+	width: 1060x;
+	height: 140;
+	float: inline-end ;
+	background: #035883; 
+	padding: 10px;
+	margin-top: 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+
+} cor do corpo-aside*/
+
+/* Config. da imagem do cabeçalho*/
+header#cabecalho img#icone {
+	position: absolute;
+	left: 1050px;
+	top: 115px;
+}
+
+/* Config. logo do cabeçalho*/
+header#cabecalho {
+	border-bottom: #606060 solid; /*linha marcando Limite do cabbecalho*/
+	height: 160px; /*altura do cabcalho*/
+	background: url("../_imagem/logopequeno.webp") no-repeat 0px 62px; /*"logo h=0 e v= 53"*/
+}
+
+/* Config. do cabeçalho - Título*/  
+header#cabecalho h1 {
+	font-family: Arial bold, sans-serif;
+	font-size: 50pix;
+	width: 1000px;
+	line-height: 42px;
+	color: rgb(227, 227, 250);
+	background-color: #035883;
+	padding: 5px;
+	margin-bottom: 5px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,1) /*sombreamento do texto*/
+}
+
+/* Config. do cabeçalho - Subtítulo*/
+header#cabecalho h2 {
+	@font-family: 'Titillium Web', sans-serif;
+	font-size: 15pix;
+	color: #888888;
+ 	padding: 0px;
+	margin-top: 75px;
+	margin-left: 80px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3) /*sombreamento do texto*/
+}
+
+/* formatação do imagem com legenda*/
+figure.foto-legenda {
+	position: relative; /*coloca legenda dentro da imagem*/
+	border: 8px solide #606060; /*borda em torno da imagem*/
+		
+}
+
+/* Coloca sombreamento na figura  class*/
+figure.foto-legenda img {
+	widht: 100%
+	height: 100%;  
+}
+
+/* formatação do legenda, dentro da imagem*/
+figure.foto-legenda figcaption{
+	opacity:0; /*esconde a legenda*/ 
+	position: absolute; 
+	top: 0px;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	height:100%; /*altura do tamanho da imagem*/
+	width: 100%; /*largura menor que o tamanho da imagem*/
+	padding:10px;
+	box-sizing: border-box; /*box dentro da borda*/
+	transition: opacity 1s;
+}
+
+/* formatação apresentar legenda ao passar o mouse*/
+figure.foto-legenda:hover figcaption{
+	opacity:1;
+}
+
+/*Formatação do menu*/
+
+nav#menu {
+    display: block; /*faz menu flutuante */
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+        position: absolute; /* bloco fluatua por toda pagina */
+    top: 0px;
+    left: 460px;
+}
+
+nav#menu li{
+	display: inline-block; /* coloca o menu em linha */
+	color: #cecece;
+    background-color: #035883; /*cor no fundo do texto, cinza */
+    padding: 10px;  /* expaço dentro do caixa "menu */
+    margin: 2px;
+    transition: background-color 1s; /* 1 segundo pra mudar a cor*/
+}
+
+nav#menu li:hover{
+    background-color: #606060; /*mudar a cor do menu ao passar o mouse*/
+}
+
+nav#menu h1{
+    display: none; /*esconde o "menu principal*/
+}
+
+/*configurando os links do menu ao passar o mouse*/
+nav#menu a {
+    color: #ffffff; 
+    text-decoration: none; /* sem sublinhar o texto*/
+}
+
+/* Cor do texto do menu ao passar o mouse */
+nav#menu a:hover {
+    color: rgb(100, 245, 3);
+}
+
+article#noticia_principal {
+	background-color: blue;
+}
+
+section#corpo {
+	display: block;
+	width: 590px;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid #606060;
+}
+
+article#noticia-principal h2 {
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-article h1 { 
+	font-family: Verdana, sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin: opx;
+}
+
+header#cabecalho-article h2 {
+	font-family: Verdana, sans-serif;
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho-article h3 {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	color: #606060;
+	margin-bottom: 0px;
+}
+
+/* Formatação da class direita do h3 header-noticia*/
+.direita {
+	text-align: right;
+}
+	
+
+
+
+aside#lateral {
+	display: block;
+	width: 350px;
+	float: right;
+	background: #dddddd; /* cor do corpo-aside*/
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+}
+
+aside#lateral h1 {
+	font-family: Verdana, sans-serif;
+	font-weight: 20pt;
+	color: #606060;
+}
+
+aside#lateral h2 {
+	background-color: #888888; /*cor de fundo subtitulo*/
+	font-size: 13 pt;
+	color: #ffffff; /* cor fonte*/
+	padding: 5px;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodape p {
+	text-align: center;
+}
+
+
+footer#rodape a {
+	text-decoration: none;
+	color: #000000;
+}
+
+/*Muda a cor do link ao passar o mouse*/
+footer#rodape a:hover {
+	color: blue;
+}
+/* TABELA */
+table#tabelaspec {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaspec td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+	background-color: #cecece;
+
+}
+
+table#tabeleaspec caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+table#tabelaspec caption span {
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
